@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnOvator Resort Management System</title>
+    <link rel="stylesheet" href="homepage-employees.css">
+</head>
+<body>
+    <header>
+        <div class="logo">InnOvator</div>
+    </header>
+    
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Room Status</a></li>
+            <li><a href="#">Records</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="area">
+            <section class="rooms">
+                <h2>Rooms</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Room Number</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>101</td>
+                            <td class="status occupied">Occupied</td>
+                        </tr>
+                        <tr>
+                            <td>102</td>
+                            <td class="status available">Available</td>
+                        </tr>
+                        <tr>
+                            <td>103</td>
+                            <td class="status reserved">Reserved</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="see-all" onclick="location.href='../Rooms-Employees/rooms-employees.html'">See All Rooms</button>
+            </section>
+            <section class="records">
+                <h2>Records</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Room Number</th>
+                            <th>Check-in Date</th>
+                            <th>Check-out Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>101</td>
+                            <td>2021-10-01</td>
+                            <td>2021-10-05</td>
+                        </tr>
+                        <tr>
+                            <td>Jane Smith</td>
+                            <td>102</td>
+                            <td>2021-10-02</td>
+                            <td>2021-10-07</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="see-all" onclick="location.href='../Records-Employees/records.html'">See All Records</button>
+            </section>
+            <section class="check-in">
+                <h2>Check-In</h2>
+                <form>
+                    <label for="guest-name">Guest Name</label>
+                    <input type="text" id="guest-name" name="guest-name">
+                    
+                    <label for="room-type">Room Type</label>
+                    <select id="room-type" name="room-type">
+                        <option value="single">Single</option>
+                        <option value="double">Double</option>
+                        <option value="suite">Suite</option>
+                    </select>
+
+                    <label for="check-in-date">Check-in Date</label>
+                    <input type="date" id="check-in-date" name="check-in-date">
+
+                    <label for="check-out-date">Check-out Date</label>
+                    <input type="date" id="check-out-date" name="check-out-date">
+
+                    <label for="special-requests">Special Requests</label>
+                    <textarea id="special-requests" name="special-requests"></textarea>
+
+                    <button type="submit">Check-In</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2021 InnOvator Resort Management System. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>

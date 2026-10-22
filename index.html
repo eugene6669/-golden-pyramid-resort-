@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Golden Pyramid Pavilion and Resort - Experience luxury and tranquility at our premium beachfront resort. Book your dream vacation today.">
+    <title>Golden Pyramid Pavilion and Resort - Luxury Beachfront Paradise</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/modern-styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">GOLDEN <span>PYRAMID</span></a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#amenities">Amenities</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#booking" class="nav-cta">Book Now</a></li>
+            </ul>
+            
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background"></div>
+        
+        <div class="hero-content">
+            <p class="hero-subtitle">Welcome to Paradise</p>
+            <h1 class="hero-title">Golden Pyramid Pavilion and Resort</h1>
+            <p class="hero-description">
+                Discover an oasis of tranquility where pristine beaches meet world-class hospitality. 
+                Your perfect escape awaits at our exclusive beachfront resort.
+            </p>
+            <div class="hero-buttons">
+                <a href="#booking" class="btn btn-primary">
+                    Book Your Stay
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#rooms" class="btn btn-secondary">
+                    Explore Rooms
+                </a>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="section" id="rooms">
+        <div class="section-header">
+            <p class="section-subtitle">Accommodations</p>
+            <h2 class="section-title">Luxury Rooms & Suites</h2>
+            <p class="section-description">
+                Each room is thoughtfully designed to provide the ultimate comfort and elegance, 
+                offering breathtaking views and premium amenities.
+            </p>
+        </div>
+
+        <div class="rooms-grid">
+            <!-- Deluxe Ocean View -->
+            <div class="room-card" data-category="popular">
+                <div class="room-image">
+                    <span class="room-badge">Popular</span>
+                    <img src="images/room1.png" alt="Deluxe Ocean View Room">
+                </div>
+                <div class="room-content">
+                    <div class="room-header">
+                        <h3 class="room-title">Deluxe Ocean View</h3>
+                        <div class="room-price">
+                            <div class="room-price-amount">₱16,850</div>
+                            <div class="room-price-period">per night</div>
+                        </div>
+                    </div>
+                    <p class="room-description">
+                        Wake up to stunning ocean views from your private balcony. This spacious room features 
+                        contemporary design with plush king-size bedding and modern amenities.
+                    </p>
+                    <div class="room-features">
+                        <span class="feature-tag">👥 2 Guests</span>
+                        <span class="feature-tag">🛏️ King Bed</span>
+                        <span class="feature-tag">📏 45 sqm</span>
+                        <span class="feature-tag">🌊 Ocean View</span>
+                    </div>
+                    <button class="room-cta" onclick="scrollToBooking('Deluxe Ocean View')">
+                        Reserve Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Premium Suite -->
+            <div class="room-card" data-category="luxury">
+                <div class="room-image">
+                    <span class="room-badge">Best Value</span>
+                    <img src="images/room2.png" alt="Premium Suite">
+                </div>
+                <div class="room-content">
+                    <div class="room-header">
+                        <h3 class="room-title">Premium Suite</h3>
+                        <div class="room-price">
+                            <div class="room-price-amount">₱25,300</div>
+                            <div class="room-price-period">per night</div>
+                        </div>
+                    </div>
+                    <p class="room-description">
+                        Indulge in luxury with our Premium Suite featuring separate living area, 
+                        spa-like bathroom, and panoramic ocean views from floor-to-ceiling windows.
+                    </p>
+                    <div class="room-features">
+                        <span class="feature-tag">👥 4 Guests</span>
+                        <span class="feature-tag">🛏️ King + Sofa</span>
+                        <span class="feature-tag">📏 65 sqm</span>
+                        <span class="feature-tag">🌅 Panoramic View</span>
+                    </div>
+                    <button class="room-cta" onclick="scrollToBooking('Premium Suite')">
+                        Reserve Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Royal Villa -->
+            <div class="room-card" data-category="luxury">
+                <div class="room-image">
+                    <span class="room-badge">Exclusive</span>
+                    <img src="images/room3.png" alt="Royal Villa">
+                </div>
+                <div class="room-content">
+                    <div class="room-header">
+                        <h3 class="room-title">Royal Villa</h3>
+                        <div class="room-price">
+                            <div class="room-price-amount">₱45,000</div>
+                            <div class="room-price-period">per night</div>
+                        </div>
+                    </div>
+                    <p class="room-description">
+                        Ultimate luxury awaits in our Royal Villa with private infinity pool, 
+                        personal butler service, and direct beach access. The epitome of exclusivity.
+                    </p>
+                    <div class="room-features">
+                        <span class="feature-tag">👥 6 Guests</span>
+                        <span class="feature-tag">🛏️ 2 King Beds</span>
+                        <span class="feature-tag">📏 120 sqm</span>
+                        <span class="feature-tag">🏊 Private Pool</span>
+                    </div>
+                    <button class="room-cta" onclick="scrollToBooking('Royal Villa')">
+                        Reserve Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Garden View Room -->
+            <div class="room-card" data-category="standard">
+                <div class="room-image">
+                    <img src="images/room1.png" alt="Garden View Room">
+                </div>
+                <div class="room-content">
+                    <div class="room-header">
+                        <h3 class="room-title">Garden View Room</h3>
+                        <div class="room-price">
+                            <div class="room-price-amount">₱11,200</div>
+                            <div class="room-price-period">per night</div>
+                        </div>
+                    </div>
+                    <p class="room-description">
+                        Tranquil retreat overlooking our lush tropical gardens. Perfect for guests 
+                        seeking a peaceful sanctuary with easy access to resort facilities.
+                    </p>
+                    <div class="room-features">
+                        <span class="feature-tag">👥 2 Guests</span>
+                        <span class="feature-tag">🛏️ Queen Bed</span>
+                        <span class="feature-tag">📏 38 sqm</span>
+                        <span class="feature-tag">🌴 Garden View</span>
+                    </div>
+                    <button class="room-cta" onclick="scrollToBooking('Garden View Room')">
+                        Reserve Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Beachfront Bungalow -->
+            <div class="room-card" data-category="special">
+                <div class="room-image">
+                    <span class="room-badge">New</span>
+                    <img src="images/room2.png" alt="Beachfront Bungalow">
+                </div>
+                <div class="room-content">
+                    <div class="room-header">
+                        <h3 class="room-title">Beachfront Bungalow</h3>
+                        <div class="room-price">
+                            <div class="room-price-amount">₱30,950</div>
+                            <div class="room-price-period">per night</div>
+                        </div>
+                    </div>
+                    <p class="room-description">
+                        Step directly onto the sand from your private deck. This romantic bungalow 
+                        offers unparalleled beach access and intimate sunset views.
+                    </p>
+                    <div class="room-features">
+                        <span class="feature-tag">👥 2 Guests</span>
+                        <span class="feature-tag">🛏️ King Bed</span>
+                        <span class="feature-tag">📏 52 sqm</span>
+                        <span class="feature-tag">🏖️ Beach Access</span>
+                    </div>
+                    <button class="room-cta" onclick="scrollToBooking('Beachfront Bungalow')">
+                        Reserve Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Family Suite -->
+            <div class="room-card" data-category="family">
+                <div class="room-image">
+                    <img src="images/room3.png" alt="Family Suite">
+                </div>
+                <div class="room-content">
+                    <div class="room-header">
+                        <h3 class="room-title">Family Suite</h3>
+                        <div class="room-price">
+                            <div class="room-price-amount">₱21,350</div>
+                            <div class="room-price-period">per night</div>
+                        </div>
+                    </div>
+                    <p class="room-description">
+                        Spacious accommodation perfect for families, featuring connecting rooms, 
+                        kid-friendly amenities, and a dedicated play area.
+                    </p>
+                    <div class="room-features">
+                        <span class="feature-tag">👥 5 Guests</span>
+                        <span class="feature-tag">🛏️ King + Twin</span>
+                        <span class="feature-tag">📏 75 sqm</span>
+                        <span class="feature-tag">👶 Kid Friendly</span>
+                    </div>
+                    <button class="room-cta" onclick="scrollToBooking('Family Suite')">
+                        Reserve Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section class="section" id="amenities">
+        <div class="section-header">
+            <p class="section-subtitle">Resort Features</p>
+            <h2 class="section-title">World-Class Amenities</h2>
+            <p class="section-description">
+                Every detail is designed to exceed your expectations and create unforgettable moments.
+            </p>
+        </div>
+
+        <div class="amenities-grid">
+            <div class="amenity-card">
+                <div class="amenity-icon">🏊♂️</div>
+                <h3 class="amenity-title">Infinity Pools</h3>
+                <p class="amenity-description">
+                    Three stunning infinity pools with swim-up bars and breathtaking ocean views.
+                </p>
+            </div>
+
+            <div class="amenity-card">
+                <div class="amenity-icon">🍽️</div>
+                <h3 class="amenity-title">Gourmet Dining</h3>
+                <p class="amenity-description">
+                    Five award-winning restaurants featuring international cuisine and local specialties.
+                </p>
+            </div>
+
+            <div class="amenity-card">
+                <div class="amenity-icon">💆♀️</div>
+                <h3 class="amenity-title">Luxury Spa</h3>
+                <p class="amenity-description">
+                    Full-service spa with rejuvenating treatments, sauna, and wellness programs.
+                </p>
+            </div>
+
+            <div class="amenity-card">
+                <div class="amenity-icon">🏋️</div>
+                <h3 class="amenity-title">Fitness Center</h3>
+                <p class="amenity-description">
+                    State-of-the-art gym with personal trainers and daily yoga classes.
+                </p>
+            </div>
+
+            <div class="amenity-card">
+                <div class="amenity-icon">🎾</div>
+                <h3 class="amenity-title">Sports Complex</h3>
+                <p class="amenity-description">
+                    Tennis courts, beach volleyball, water sports, and recreation facilities.
+                </p>
+            </div>
+
+            <div class="amenity-card">
+                <div class="amenity-icon">👶</div>
+                <h3 class="amenity-title">Kids Club</h3>
+                <p class="amenity-description">
+                    Supervised activities and entertainment for children of all ages.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section class="section" id="experiences" style="background: var(--bg-white);">
+        <div class="section-header">
+            <p class="section-subtitle">Activities</p>
+            <h2 class="section-title">Unforgettable Experiences</h2>
+            <p class="section-description">
+                Create lasting memories with our curated collection of activities and excursions.
+            </p>
+        </div>
+
+        <div class="amenities-grid">
+            <div class="amenity-card">
+                <div class="amenity-icon">🤿</div>
+                <h3 class="amenity-title">Scuba Diving</h3>
+                <p class="amenity-description">
+                    Explore vibrant coral reefs and marine life with certified instructors.
+                </p>
+            </div>
+
+            <div class="amenity-card">
+                <div class="amenity-icon">🚤</div>
+                <h3 class="amenity-title">Island Hopping</h3>
+                <p class="amenity-description">
+                    Private yacht tours to nearby islands and hidden beaches.
+                </p>
+            </div>
+
+            <div class="amenity-card">
+                <div class="amenity-icon">🌅</div>
+                <h3 class="amenity-title">Sunset Cruises</h3>
+                <p class="amenity-description">
+                    Romantic evening cruises with champagne and gourmet canapés.
+                </p>
+            </div>
+
+            <div class="amenity-card">
+                <div class="amenity-icon">🎣</div>
+                <h3 class="amenity-title">Deep Sea Fishing</h3>
+                <p class="amenity-description">
+                    Charter fishing expeditions with experienced local guides.
+                </p>
+            </div>
+
+            <div class="amenity-card">
+                <div class="amenity-icon">🧘♀️</div>
+                <h3 class="amenity-title">Wellness Retreats</h3>
+                <p class="amenity-description">
+                    Holistic wellness programs including meditation and mindfulness.
+                </p>
+            </div>
+
+            <div class="amenity-card">
+                <div class="amenity-icon">🍷</div>
+                <h3 class="amenity-title">Wine Tasting</h3>
+                <p class="amenity-description">
+                    Curated wine experiences with sommelier-led tastings.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section" id="testimonials">
+        <div class="section-header">
+            <p class="section-subtitle">Guest Reviews</p>
+            <h2 class="section-title">What Our Guests Say</h2>
+            <p class="section-description">
+                Read about the experiences of travelers who have discovered paradise at Luxora Resort.
+            </p>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-quote">"</div>
+                <p class="testimonial-text">
+                    An absolutely magical experience! The staff went above and beyond to make our 
+                    anniversary unforgettable. The oceanfront villa was pristine and the sunset views 
+                    were breathtaking. We'll definitely be returning!
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">SM</div>
+                    <div class="author-info">
+                        <h4>Sarah & Michael</h4>
+                        <p>Honeymooners from New York</p>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-quote">"</div>
+                <p class="testimonial-text">
+                    Perfect family vacation destination! The kids club kept our children entertained 
+                    while we enjoyed the spa and fine dining. Every detail was thoughtfully designed. 
+                    Truly a five-star experience from start to finish.
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">JL</div>
+                    <div class="author-info">
+                        <h4>Jennifer Lopez</h4>
+                        <p>Family Traveler from California</p>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-quote">"</div>
+                <p class="testimonial-text">
+                    The most luxurious resort we've ever stayed at. Impeccable service, world-class 
+                    amenities, and stunning architecture. The infinity pool overlooking the ocean was 
+                    pure bliss. Worth every penny!
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">RK</div>
+                    <div class="author-info">
+                        <h4>Robert Kim</h4>
+                        <p>Business Traveler from Singapore</p>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="section booking-section" id="booking">
+        <div class="section-header">
+            <p class="section-subtitle">Reserve Your Stay</p>
+            <h2 class="section-title" style="color: var(--text-light);">Book Your Dream Vacation</h2>
+            <p class="section-description" style="color: rgba(255,255,255,0.8);">
+                Complete the form below and our reservation team will confirm your booking within 24 hours.
+            </p>
+        </div>
+
+        <form class="booking-form" id="bookingForm">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="guestName">Full Name *</label>
+                    <input type="text" id="guestName" name="guestName" required placeholder="John Doe">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="+1 (555) 000-0000">
+                </div>
+
+                <div class="form-group">
+                    <label for="roomType">Room Type *</label>
+                    <select id="roomType" name="roomType" required>
+                        <option value="">Select Room Type</option>
+                        <option value="Garden View Room">Garden View Room - ₱11,200/night</option>
+                        <option value="Deluxe Ocean View">Deluxe Ocean View - ₱16,850/night</option>
+                        <option value="Family Suite">Family Suite - ₱21,350/night</option>
+                        <option value="Premium Suite">Premium Suite - ₱25,300/night</option>
+                        <option value="Beachfront Bungalow">Beachfront Bungalow - ₱30,950/night</option>
+                        <option value="Royal Villa">Royal Villa - ₱45,000/night</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="checkIn">Check-in Date *</label>
+                    <input type="date" id="checkIn" name="checkIn" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="checkOut">Check-out Date *</label>
+                    <input type="date" id="checkOut" name="checkOut" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="guests">Number of Guests *</label>
+                    <select id="guests" name="guests" required>
+                        <option value="">Select Number</option>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5 Guests</option>
+                        <option value="6">6+ Guests</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="amenities">Additional Services</label>
+                    <select id="amenities" name="amenities">
+                        <option value="">Select Optional Services</option>
+                        <option value="airport">Airport Transfer</option>
+                        <option value="spa">Spa Package</option>
+                        <option value="dining">Fine Dining Experience</option>
+                        <option value="excursion">Island Excursion</option>
+                        <option value="celebration">Celebration Package</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="specialRequests">Special Requests</label>
+                <textarea id="specialRequests" name="specialRequests" placeholder="Please let us know if you have any special requirements or preferences..."></textarea>
+            </div>
+
+            <button type="submit" class="form-submit">
+                Confirm Reservation
+            </button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Golden Pyramid Pavilion and Resort</h3>
+                <p>
+                    Experience unparalleled luxury and hospitality at our exclusive beachfront paradise. 
+                    Your dream vacation awaits.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61558381945719" target="_blank" class="social-icon" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/soothing.echoes?igsh=aWRoOWhoc3E2bndv" target="_blank" class="social-icon" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.tiktok.com/@soothing.echoes?_t=8mXb0xapyx5&_r=1" target="_blank" class="social-icon" aria-label="TikTok">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#rooms">Accommodations</a></li>
+                    <li><a href="#amenities">Amenities</a></li>
+                    <li><a href="#experiences">Experiences</a></li>
+                    <li><a href="#booking">Book Now</a></li>
+                    <li><a href="#testimonials">Guest Reviews</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul class="footer-links">
+                    <li>📍 123 Paradise Beach, Tropical Island</li>
+                    <li>📞 +1 (800) 555-LUXE</li>
+                    <li>✉️ <a href="mailto:innovatorcustomerservice@gmail.com">reservations@goldenpyramid.com</a></li>
+                    <li>🕐 24/7 Concierge Service</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe for exclusive offers and updates</p>
+                <div style="margin-top: 1rem;">
+                    <input type="email" placeholder="Your email" style="padding: 0.75rem; border-radius: 4px; border: none; width: 100%; margin-bottom: 0.5rem;">
+                    <button class="btn btn-primary" style="width: 100%;">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Golden Pyramid Pavilion and Resort. All rights reserved. | <a href="#" style="color: var(--primary-gold);">Privacy Policy</a> | <a href="#" style="color: var(--primary-gold);">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

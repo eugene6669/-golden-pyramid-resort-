@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Rooms</title>
+    <link rel="stylesheet" href="../Rooms-Employees/rooms-employees.css">
+</head>
+<body>
+    <header>
+        <h1>All Rooms</h1>
+    </header>
+    
+    <main>
+        <button onclick="sortRooms('available')">Sort by Available</button>
+        <button onclick="sortRooms('occupied')">Sort by Occupied</button>
+        <button onclick="sortRooms('reserved')">Sort by Reserved</button>
+        <button onclick="returnToHomepage()">Return to Homepage</button>
+
+        <ul id="room-list">
+            <li class="room available">Room 101</li>
+            <li class="room occupied">Room 102</li>
+            <li class="room reserved">Room 103</li>
+            <li class="room available">Room 104</li>
+            <li class="room available">Room 105</li>
+            <li class="room occupied">Room 106</li>
+            <li class="room reserved">Room 107</li>
+            <li class="room available">Room 108</li>
+            <li class="room available">Room 109</li>
+            <li class="room occupied">Room 110</li>
+            <li class="room reserved">Room 111</li>
+            <li class="room available">Room 112</li>
+            <li class="room available">Room 113</li>
+            <li class="room occupied">Room 114</li>
+            <li class="room reserved">Room 115</li>
+        </ul>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 InnOvator Resort Management System. All rights reserved.</p>
+    </footer>
+
+    <script src="../Rooms-Employees/rooms-employees.js"></script>
+</body>
+</html>

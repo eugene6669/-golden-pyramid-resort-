@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnOvator Dashboard</title>
+    <link rel="stylesheet" href="homepage_styles.css">
+</head>
+<body>
+    <div class="container" id="dashboard-section">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>InnOvator</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="#" id="dashboard-link">Dashboard</a></li>
+                <li><a href="#" id="rooms-link">Rooms</a></li>
+                <li><a href="#" id="availability-link">Availability</a></li>
+                <li><a href="#" id="reservations-link">Reservations</a></li>
+                <li><a href="#" id="help-support-link">Help & Support</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <div class="user-options">
+                    <span class="notification-icon">🔔</span>
+                    <span class="user-icon">👤</span>
+                </div>
+            </div>
+            <div class="hero-section">
+                <div class="hero-image">
+                    <img src="../Pictures/bg.jpg" alt="Hero Image">
+                </div>
+                <div class="hero-text">
+                    <h1>Welcome to Golden Pyramid Resort and Pavilion</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, beatae.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <button onclick="window.location.href='../Learn_more/Learn_more.html'">Learn More</button>                </div>
+            </div>
+            <div class="rooms-section" id="rooms-section">
+                <h2>Rooms</h2>
+                <a href="../Rooms/all-rooms.html" class="see-all">See all</a>                <div class="rooms">
+                    <div class="room">
+                        <img src="../Pictures/room1.png" alt="Room 1">
+                        <h3>Room 1</h3>
+                        <p class="room1-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Cumque optio dolores ullam illo eum id corporis 
+                            excepturi, aliquam, quasi, delectus fugit nesciunt cupiditate 
+                            mollitia eligendi repudiandae facilis commodi! Voluptatibus, nihil?</p>
+                            <button class="details" onclick="window.location.href='../Rooms/all-rooms.html'">View Details</button>
+                        </div>
+                    <div class="room">
+                        <img src="../Pictures/room2.png" alt="Room 2">
+                        <h3>Room 2</h3>
+                        <p class="room2-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Cumque optio dolores ullam illo eum id corporis 
+                            excepturi, aliquam, quasi, delectus fugit nesciunt cupiditate 
+                            mollitia eligendi repudiandae facilis commodi! Voluptatibus, nihil?</p>
+                            <button class="details" onclick="window.location.href='../Rooms/all-rooms.html'">View Details</button>
+                    </div>
+                    <div class="room">
+                        <img src="../Pictures/room3.png" alt="Room 3">
+                        <h3>Room 3</h3>
+                        <p class="room3-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Cumque optio dolores ullam illo eum id corporis 
+                            excepturi, aliquam, quasi, delectus fugit nesciunt cupiditate 
+                            mollitia eligendi repudiandae facilis commodi! Voluptatibus, nihil?</p>
+                            <button class="details" onclick="window.location.href='../Rooms/all-rooms.html'">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="availability-section" id="availability-section">
+                <h2>Availability</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rooms</th>
+                            <th>Room Type</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Room 101</td>
+                            <td>Single</td>
+                            <td>Occupied</td>
+                        </tr>
+                        <tr>
+                            <td>Room 102</td>
+                            <td>Single</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>Room 103</td>
+                            <td>Double</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>Room 104</td>
+                            <td>Double</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>Room 105</td>
+                            <td>Single</td>
+                            <td>Occupied</td>
+                        </tr>
+                        <tr>
+                            <td>Room 106</td>
+                            <td>Single</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>Room 107</td>
+                            <td>Double</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>Room 108</td>
+                            <td>Double</td>
+                            <td>Available</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="reservations-section" id="reservations-section">
+                <h2>Reservations</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="guest-name">Guest Name</label>
+                        <input type="text" id="guest-name" name="guest-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="room-type">Room Type</label>
+                        <select id="room-type" name="room-type">
+                            <option value="">Select Room Type</option>
+                            <option value="single">Single</option>
+                            <option value="double">Double</option>
+                            <option value="suite">Suite</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="amenities">Amenities/Services</label>
+                        <select id="amenities" name="amenities">
+                            <option value="">Select Additional Amenities/Services</option>
+                            <option value="wifi">WiFi</option>
+                            <option value="breakfast">Breakfast</option>
+                            <option value="parking">Parking</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="check-in-date">Check-in Date</label>
+                        <input type="date" id="check-in-date" name="check-in-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="check-out-date">Check-out Date</label>
+                        <input type="date" id="check-out-date" name="check-out-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="special-request">Special Request</label>
+                        <textarea id="special-request" name="special-request"></textarea>
+                    </div>
+                    <button type="submit">Make Reservation</button>
+                </form>
+            </div>
+            <div class="help-support-section" id="help-support-section">
+                <h2>Help & Support</h2>
+                <p>If you have any questions or need assistance, feel free to reach out to us:</p>
+                <div class="contact-us">
+                    <a href="mailto:innovatorcustomerservice@gmail.com">
+                        <img src="../Pictures/gmail-logo.png" alt="Gmail Logo" class="icon">
+                        Contact Us
+                    </a>
+                </div>
+                <div class="social-media">
+                    <h3>Follow us on:</h3>
+                    <a href="https://www.tiktok.com/@soothing.echoes?_t=8mXb0xapyx5&_r=1" target="_blank">
+                        <img src="../Pictures/tiktok-logo.png" alt="TikTok Logo" class="icon">
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61558381945719" target="_blank">
+                        <img src="../Pictures/fb-logo.png" alt="Facebook Logo" class="icon">
+                    </a>
+                    <a href="https://www.instagram.com/soothing.echoes?igsh=aWRoOWhoc3E2bndv" target="_blank">
+                        <img src="../Pictures/ig-logo.png" alt="Instagram Logo" class="icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2022 Resort Management System. All rights reserved.</p>
+        <a href="#">Privacy Policy</a>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="homepage.js"></script>
+</body>
+</html>
