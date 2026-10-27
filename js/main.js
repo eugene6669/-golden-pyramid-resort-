@@ -245,12 +245,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // ==========================================
     
     const roomPrices = {
-        'Garden View Room': 11200,
-        'Deluxe Ocean View': 16850,
-        'Family Suite': 21350,
-        'Premium Suite': 25300,
-        'Beachfront Bungalow': 30950,
-        'Royal Villa': 45000
+        'Pool Entrance - Day': 250,
+        'Pool Entrance - Night': 300,
+        'Small Cabana': 650,
+        'Big Cabana': 850,
+        'Ground Floor Pavilion': 10500,
+        '2nd Floor Pavilion': 8000,
+        'Rooftop Deck': 6000,
+        'Canteen Exclusive': 3000,
+        'KTV Room': 800,
+        'Billiards': 150
     };
     
     window.calculateTotal = function() {
